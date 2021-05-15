@@ -245,7 +245,7 @@ header {
 }
 
 .content{
-  height:100vh;
+  min-height:75vh;
 }
 
 .row-content h2 {
@@ -409,46 +409,55 @@ footer h5 {
   cursor: pointer;
 }
 
-#accordion a[aria-expanded='true'] .fa-chevron-down {
+a[aria-expanded='true'] .fa-chevron-down {
   display: none;
 }
 
-#accordion a[aria-expanded='false'] .fa-chevron-up {
+a[aria-expanded='false'] .fa-chevron-up {
   display: none;
 }
 
-#accordion .card {
+.card {
   margin-bottom: 0.2rem;
-  background: #7538dd;
+  background: #966ae9;
 }
-#accordion .card h4 a {
+.no-shadow{
+  text-shadow:none;
+}
+.card-header {
   text-shadow: 1px 2px 1px #7538dd;
+  border:none;
 }
-#accordion .card h4 a small {
+.card h4 a small {
   text-shadow: none;
 }
-#accordion .card p {
+.card-body {
   color: whitesmoke;
   text-shadow: 1px 1px 3px #171717;
 }
-#accordion .card img {
+.card img {
   border-radius: 25px;
   width: 100%;
 }
-#accordion .card ul {
+.card ul {
   margin-left: 3rem;
 }
-#accordion .card ul li {
+.card ul li {
   list-style: none;
 }
 
-#accordion .card-header {
+.card-header {
   background: #966ae9;
 }
 
 .officer {
   color: whitesmoke;
   text-shadow: 1px 1px 3px #171717;
+}
+
+.card-body ul li{
+  color:black;
+  text-shadow:none;
 }
 
 #rip {

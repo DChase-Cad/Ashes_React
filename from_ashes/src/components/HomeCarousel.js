@@ -1,7 +1,6 @@
 
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption} from 'reactstrap';
-import React, { Component, useState } from 'react';
-import CardImg from 'reactstrap/lib/CardImg';
+import React, { useState } from 'react';
 
 const items = [
     {

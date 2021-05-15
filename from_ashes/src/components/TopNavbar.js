@@ -14,10 +14,10 @@ const TopNavbar = (props) => {
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        <NavItem className="nav-item ml-4 active"><a className="nav-link" href="#"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</a></NavItem>
-                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="aboutUs.html"><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</NavLink></NavItem>
-                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</NavLink></NavItem>
-                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="gallery.html"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</NavLink></NavItem>
+                        <NavItem className="nav-item ml-4 active"><a className="nav-link" href="/"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</a></NavItem>
+                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="/aboutUs.html"><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</NavLink></NavItem>
+                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</NavLink></NavItem>
+                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="/gallery.html"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</NavLink></NavItem>
                        <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</NavLink></NavItem>
                     </Nav>
                 </Collapse>

@@ -5,7 +5,7 @@ export default class home extends Component {
     render() {
         return (
 
-            <div className="container">
+         
                 <div className="row row-content justify-content-center py-5">
                 <HomeCarousel />
                     <h2 className="text-center mb-4 mt-4 font-weight-bold">Welcome to From Ashes Horde Guild on Kil'jaeden Server</h2>
@@ -22,7 +22,7 @@ export default class home extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+       
         )
     }
 }
