@@ -9,7 +9,7 @@ class header extends Component {
     render() {
         return (
             <React.Fragment>
-                <header className="jumbotron p-0 pt-1 m-0 rounded-0">
+                <header className="jumbotron pt-4 rounded-0">
                     <div className="container container-fluid">
                         <div className="row justify-content-center">
                             <div className="col col-4 col-sm-3 col-md-2 align-self-center d-none d-sm-block">

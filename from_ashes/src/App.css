@@ -219,15 +219,19 @@ h4 {
 }
 
 header {
-  background-image: url('');
+  background-image: url('./shared/bg.jpg');
   background-size: 100% 100%;
   margin: 0;
 }
 
 .container .row-content {
   background-color: #171717;
-}
+  width:100%;
 
+}
+.container{
+  width:100%;
+}
 .smaller {
   font-size: 50%;
 }
@@ -238,6 +242,10 @@ header {
   background-color: black;
   font-weight: 700;
   padding-top: 7vh;
+}
+
+.content{
+  height:100vh;
 }
 
 .row-content h2 {
