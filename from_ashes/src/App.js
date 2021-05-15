@@ -19,7 +19,7 @@ class App extends Component {
                 <Header />
 
                 
-                <div class="container">
+                <div className="container">
                     <AboutContent />
                 </div>
 
