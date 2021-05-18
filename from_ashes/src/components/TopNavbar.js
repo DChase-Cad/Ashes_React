@@ -15,7 +15,7 @@ const TopNavbar = (props) => {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
-                    <NavItem className="nav-item ml-4 active"><a className="nav-link" href="/"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</a></NavItem>
+                    <NavItem className="nav-item ml-4 active"><Link to='/' className="nav-link"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</Link></NavItem>
                     <NavItem className="nav-item ml-4"><Link to='/aboutus' className="nav-link" ><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</Link></NavItem>
                     <NavItem className="nav-item ml-4"><Link to='/classresources' className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</Link></NavItem>
                     <NavItem className="nav-item ml-4"><Link to='/gallery' className="nav-link"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</Link></NavItem>

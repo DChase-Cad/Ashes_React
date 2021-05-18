@@ -1,35 +1,13 @@
 import React, { Component } from 'react'
 import { Card, CardHeader, CardBody, Collapse, CardImg } from 'reactstrap';
+import { CARDS } from '../shared/AccordionCards';
 
 export default class AboutAccordion extends Component {
   constructor(props) {
     super(props)
     this.toggle = this.toggle.bind(this);
     this.state = {
-      collapse: 1, cards: [
-        {
-          index: 1,
-          title: "Mythic Raid",
-          subtitle: "Mythic Progression Team (Guild Only)",
-          description: "Tuesday and Wednesday 7:00pm - 10:00pm Server Time (PST) Contact an officer for information about joining the mythic team.",
-          image: "assets/img/carapacedown.jpg"
-        },
-        {
-          index: 2,
-          title: "Friday Fun Raid",
-          subtitle: " - Alt friendly",
-          description: "Friday 7:00pm - 10:00pm Server Time (PST) Must meet requirements set on the in game calendar event and sign up to receive invite.",
-          image: "assets/img/hero_denathrius.jpg"
-        },
-        {
-          index: 3,
-          title: "Sunday Community Night",
-          subtitle: " - Join us for RBGS and M+!",
-          description: "Sundays starting at 7:00pm Server Time (PST) Check calendar event for details on requirements and to sign up.",
-          image: "assets/img/gruul_stoned.jpg"
-        },
-      ],
-
+      collapse: 1, cards: CARDS
     }
   }
 
@@ -52,40 +30,37 @@ export default class AboutAccordion extends Component {
 
 
             <Card key={index.index} className="w-75 mx-auto">
-              <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={index.index}>{index.title} - <small onClick={this.toggle} data-event={index.index} className="d-none d-sm-inline no-shadow font-weight-bold"> {index.subtitle}</small></CardHeader>
+              <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={index.index}>{index.title} <small onClick={this.toggle} data-event={index.index} className="d-none d-sm-inline no-shadow font-weight-bold"> - {index.subtitle}</small></CardHeader>
               <Collapse isOpen={collapse === index.index}>
                 <div className="row align-items-center">
-                  <CardBody className="card-body col-sm-6 col-lg-5 align-self-center ac-link">{index.description}</CardBody>
-                  <CardImg className="img-fluid col-sm-6 col-lg-7" src={index.image} />
+                  <CardBody className="card-body col-sm-6 col-lg-5 align-self-center ">{index.description}</CardBody>
+                  <CardImg className="img-fluid col-sm-6 col-lg-7 d-none d-sm-block " src={index.image} />
                 </div>
               </Collapse>
             </Card>
           )
         })}
+
+       {/* manually input card with ul and list */}
         <Card key={4} className="w-75 mx-auto">
-          <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={4}>Officers - <small onClick={this.toggle} data-event={4} className="d-none d-sm-inline no-shadow font-weight-bold"> Contact one of our officers in game with any questions.</small></CardHeader>
+          <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={4}>Officers <small onClick={this.toggle} data-event={4} className="d-none d-sm-inline no-shadow font-weight-bold"> - Contact one of our officers in game with any questions.</small></CardHeader>
           <Collapse isOpen={collapse === 4}>
             <div className="row align-items-center">
-              <CardBody className="card-body col-sm-6 col-lg-5 align-self-center ac-link">
-                <ul>
+              <CardBody className="card-body col-sm-12 col-lg-5 align-self-center text-center text-lg-left">
+                <ul className="mx-auto">
                   <li className="font-weight-bold">GM: <span className="officer font-weight-bold">Star</span> [Bnet#****]</li>
                   <li className="font-weight-bold">Officer: <span id="rip" className="officer font-weight-bold" data-toggle="modal" data-target="#galleryModal">Ebon</span> [Bnet#****]</li>
                   <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Asuka</span> [Bnet#****]</li>
                   <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Bav</span> [Bnet#****]</li>
                 </ul>
               </CardBody>
-              <CardImg className="img-fluid col-sm-6 col-lg-7" src="assets/img/wrathion_dance.jpg" />
+              <CardImg className="d-none d-sm-block img-fluid col-sm-8 col-lg-7 mx-auto" src="assets/img/wrathion_dance.jpg" />
             </div>
           </Collapse>
         </Card>
-
-
-
       </div>
     );
   }
-
-
 }
 
 

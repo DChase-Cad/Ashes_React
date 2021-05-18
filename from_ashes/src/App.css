@@ -557,3 +557,9 @@ a[aria-expanded='false'] .fa-chevron-up {
 .home-width{
   width:80% !important;
 }
+
+.ptb{
+  border-top:#966ae9 2px solid;
+  width:100%;
+  padding-top:2rem;
+}

@@ -1,30 +1,7 @@
 
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption} from 'reactstrap';
 import React, { useState } from 'react';
-
-const items = [
-    {
-      index:0,
-      src: 'assets/img/wrathion_dance.jpg',
-      altText: 'Slide 1',
-      caption: 'Dances with Dragons',
-      header: 'Mythic Wrathion'
-    },
-    {
-      index:1,
-      src: 'assets/img/imperator_dead_achiev.jpg',
-      altText: 'Slide 2',
-      caption: 'Imperator kill seals up progression in Highmaul.',
-      header: 'Heroic Imperator'
-    },
-    {
-      index:2,
-      src: 'assets/img/hero_denathrius.jpg',
-      altText: 'Slide 3',
-      caption: 'Denathrius Heroic down, on to mythic!',
-      header: 'Heroic Denathrius'
-    }
-  ];
+import {items} from '../shared/HomeCarouselItems';
 
 
 const HomeCarousel = (props) => {
@@ -50,7 +27,7 @@ const HomeCarousel = (props) => {
   
     const slides = items.map((item) => {
       return (
-        <CarouselItem className="w-100 rounded-0"
+        <CarouselItem className="w- rounded-0"
           onExiting={() => setAnimating(true)}
           onExited={() => setAnimating(false)}
           key={item.src}
@@ -62,7 +39,7 @@ const HomeCarousel = (props) => {
     });
   
     return (
-      <Carousel className="w-75"
+      <Carousel className="w-75 "
         activeIndex={activeIndex}
         next={next}
         previous={previous}

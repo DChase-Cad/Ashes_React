@@ -6,9 +6,9 @@ export default class home extends Component {
         return (
 
          
-                <div className="row row-content justify-content-center py-5 w-100 justify-self-center ">
+                <div className="row row-content justify-content-center pt-3 w-100 justify-self-center ">
                 <HomeCarousel />
-                    <h2 className="text-center mb-4 mt-4 font-weight-bold">Welcome to From Ashes Horde Guild on Kil'jaeden Server</h2>
+                    <h2 className="text-center mb-4 mt-5 ptb font-weight-bold">Welcome to From Ashes Horde Guild on Kil'jaeden Server</h2>
                     <div className="col col-lg-6">
                         <p className="text-light para">We are a raiding focused guild with determined members who enjoy pushing themselves to conquer the most challenging content in the game.</p>
                         <p className="text-light para">We pride ourselves on being able to strike a balance between having a semi-casual atmosphere, while achieving end game success. We understand that life always comes before the game, but when it’s time to work we do expect raiders to come prepared and ready to perform.</p>
