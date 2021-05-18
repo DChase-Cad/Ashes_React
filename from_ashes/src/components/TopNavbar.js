@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Link } from 'react-router-dom';
 // import logo from '../../public/assets/img/phoenix.png';;
 
 const TopNavbar = (props) => {
@@ -8,21 +9,21 @@ const TopNavbar = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-            
-            <Navbar className="navbar-dark" light expand='md' sticky='top'>
-                <NavbarBrand className="d-md-none" href="/"><img src="assets/img/phoenix.png" height="30" width="30" /></NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem className="nav-item ml-4 active"><a className="nav-link" href="/"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</a></NavItem>
-                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="/aboutUs.html"><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</NavLink></NavItem>
-                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</NavLink></NavItem>
-                             <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="/gallery.html"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</NavLink></NavItem>
-                       <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</NavLink></NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-        
+
+        <Navbar className="navbar-dark" light expand='md' sticky='top'>
+            <NavbarBrand className="d-md-none" href="/"><img src="assets/img/phoenix.png" height="30" width="30" /></NavbarBrand>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                    <NavItem className="nav-item ml-4 active"><a className="nav-link" href="/"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</a></NavItem>
+                    <NavItem className="nav-item ml-4"><Link to='/aboutus' className="nav-link" ><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</Link></NavItem>
+                    <NavItem className="nav-item ml-4"><Link to='/classresources' className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</Link></NavItem>
+                    <NavItem className="nav-item ml-4"><Link to='/gallery' className="nav-link"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</Link></NavItem>
+                    <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</NavLink></NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
+
     );
 }
 

@@ -69,7 +69,7 @@ export default class AboutAccordion extends Component {
               <CardBody className="card-body col-sm-6 col-lg-5 align-self-center ac-link">
                 <ul>
                   <li className="font-weight-bold">GM: <span className="officer font-weight-bold">Star</span> [Bnet#****]</li>
-                  <li className="font-weight-bold">Officer: <a id="rip" href="#" className="officer font-weight-bold" data-toggle="modal" data-target="#galleryModal">Ebon</a> [Bnet#****]</li>
+                  <li className="font-weight-bold">Officer: <span id="rip" className="officer font-weight-bold" data-toggle="modal" data-target="#galleryModal">Ebon</span> [Bnet#****]</li>
                   <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Asuka</span> [Bnet#****]</li>
                   <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Bav</span> [Bnet#****]</li>
                 </ul>
