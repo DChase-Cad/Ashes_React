@@ -62,7 +62,7 @@ const HomeCarousel = (props) => {
     });
   
     return (
-      <Carousel className="w-100"
+      <Carousel className="w-75"
         activeIndex={activeIndex}
         next={next}
         previous={previous}

@@ -9,11 +9,11 @@ export default class MainComponent extends Component {
     render() {
         return (
             <BrowserRouter>
-            <div className="App">
+            <div className="App mx-auto">
                 <Header />
 
                 
-                <div className="container">
+                <div className="container home-width">
                 <Switch>
                     <Route path='/home' component={HomeContent} />
                     <Route exact path='/aboutus' component={AboutContent} />

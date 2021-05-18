@@ -51,7 +51,7 @@ export default class AboutAccordion extends Component {
           return (
 
 
-            <Card key={index.index} className="">
+            <Card key={index.index} className="w-75 mx-auto">
               <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={index.index}>{index.title} - <small onClick={this.toggle} data-event={index.index} className="d-none d-sm-inline no-shadow font-weight-bold"> {index.subtitle}</small></CardHeader>
               <Collapse isOpen={collapse === index.index}>
                 <div className="row align-items-center">
@@ -62,7 +62,7 @@ export default class AboutAccordion extends Component {
             </Card>
           )
         })}
-        <Card key={4} className="">
+        <Card key={4} className="w-75 mx-auto">
           <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={4}>Officers - <small onClick={this.toggle} data-event={4} className="d-none d-sm-inline no-shadow font-weight-bold"> Contact one of our officers in game with any questions.</small></CardHeader>
           <Collapse isOpen={collapse === 4}>
             <div className="row align-items-center">

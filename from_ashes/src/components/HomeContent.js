@@ -6,7 +6,7 @@ export default class home extends Component {
         return (
 
          
-                <div className="row row-content justify-content-center py-5">
+                <div className="row row-content justify-content-center py-5 w-100 justify-self-center ">
                 <HomeCarousel />
                     <h2 className="text-center mb-4 mt-4 font-weight-bold">Welcome to From Ashes Horde Guild on Kil'jaeden Server</h2>
                     <div className="col col-lg-6">

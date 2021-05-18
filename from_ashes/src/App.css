@@ -553,3 +553,7 @@ a[aria-expanded='false'] .fa-chevron-up {
   list-style: none;
   color: whitesmoke;
 }
+
+.home-width{
+  width:80% !important;
+}
