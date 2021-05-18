@@ -11,7 +11,7 @@ const TopNavbar = (props) => {
     return (
 
         <Navbar className="navbar-dark" light expand='md' sticky='top'>
-            <NavbarBrand className="d-md-none" href="/"><img src="assets/img/phoenix.png" height="30" width="30" /></NavbarBrand>
+            <NavbarBrand className="d-md-none" href="/"><img src="assets/img/phoenix.png" alt="Logo" height="30" width="30" /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
