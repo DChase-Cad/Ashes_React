@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TopNavbar from './TopNavbar';
 import { Link } from 'react-router-dom';
-// import logo from '../../public/assets/img/phoenix.png';
 
 
 
 
-class header extends Component {
-    render() {
+
+export default function header(){
+   
         return (
             <React.Fragment>
                 <header className="jumbotron pt-4 rounded-0">
@@ -31,7 +31,6 @@ class header extends Component {
 
             </React.Fragment>
         );
-    }
+    
 }
 
-export default header;

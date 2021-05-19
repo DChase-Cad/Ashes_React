@@ -1,12 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import HomeCarousel from './HomeCarousel'
 
-export default class home extends Component {
-    render() {
+export default function Home(){
         return (
-
-         
-                <div className="row row-content justify-content-center pt-3 w-100 justify-self-center ">
+                <div className="row row-content justify-content-center py-3 w-100 justify-self-center content ">
                 <HomeCarousel />
                     <h2 className="text-center mb-4 mt-5 ptb font-weight-bold">Welcome to From Ashes Horde Guild on Kil'jaeden Server</h2>
                     <div className="col col-lg-6">
@@ -24,5 +21,4 @@ export default class home extends Component {
                 </div>
        
         )
-    }
-}
+   }

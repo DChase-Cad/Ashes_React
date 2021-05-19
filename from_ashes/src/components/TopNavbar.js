@@ -7,6 +7,13 @@ const TopNavbar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+    
+    function toggleLink (){
+        if (isOpen===true) {
+            console.log('what')
+            toggle();
+        }
+    };
 
     return (
 
@@ -15,11 +22,11 @@ const TopNavbar = (props) => {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
-                    <NavItem className="nav-item ml-4 active"><Link to='/' className="nav-link"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</Link></NavItem>
-                    <NavItem className="nav-item ml-4"><Link to='/aboutus' className="nav-link" ><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</Link></NavItem>
-                    <NavItem className="nav-item ml-4"><Link to='/classresources' className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</Link></NavItem>
-                    <NavItem className="nav-item ml-4"><Link to='/gallery' className="nav-link"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</Link></NavItem>
-                    <NavItem className="nav-item ml-4"><NavLink className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</NavLink></NavItem>
+                    <NavItem onClick={toggleLink} className="nav-item ml-4 active drop"><Link to='/' className="nav-link"><i className="d-none d-md-inline fa fa-home fa-lg"></i> Home</Link></NavItem>
+                    <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link to='/aboutus' className="nav-link" ><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</Link></NavItem>
+                    <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link to='/classresources' className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</Link></NavItem>
+                    <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link to='/gallery' className="nav-link"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</Link></NavItem>
+                    <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><NavLink className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</NavLink></NavItem>
                 </Nav>
             </Collapse>
         </Navbar>

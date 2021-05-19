@@ -47,11 +47,11 @@ export default class AboutAccordion extends Component {
           <Collapse isOpen={collapse === 4}>
             <div className="row align-items-center">
               <CardBody className="card-body col-sm-12 col-lg-5 align-self-center text-center text-lg-left">
-                <ul className="mx-auto">
-                  <li className="font-weight-bold">GM: <span className="officer font-weight-bold">Star</span> [Bnet#****]</li>
-                  <li className="font-weight-bold">Officer: <span id="rip" className="officer font-weight-bold" data-toggle="modal" data-target="#galleryModal">Ebon</span> [Bnet#****]</li>
-                  <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Asuka</span> [Bnet#****]</li>
-                  <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Bav</span> [Bnet#****]</li>
+                <ul className="ml-0 ml-sm-4">
+                  <li className="font-weight-bold">GM: <span className="officer font-weight-bold">Star</span> [Bnet#]</li>
+                  <li className="font-weight-bold">Officer: <span id="rip" className="officer font-weight-bold" data-toggle="modal" data-target="#galleryModal">Ebon</span> [Bnet#]</li>
+                  <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Asuka</span> [Bnet#]</li>
+                  <li className="font-weight-bold">Officer: <span className="officer font-weight-bold">Bav</span> [Bnet#]</li>
                 </ul>
               </CardBody>
               <CardImg className="d-none d-sm-block img-fluid col-sm-8 col-lg-7 mx-auto" src="assets/img/wrathion_dance.jpg" />

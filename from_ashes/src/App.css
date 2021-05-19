@@ -492,7 +492,7 @@ a[aria-expanded='false'] .fa-chevron-up {
   background-color: orange;
 }
 
-.dk {
+.dk{
   background-color: #c41e3a;
 }
 
@@ -540,16 +540,16 @@ a[aria-expanded='false'] .fa-chevron-up {
   
 }
 
-#guides .card {
+.class-card {
   background: #2e2e2e;
   min-height: 195px;
 }
 
-#guides .card-header {
+.class-card-header {
   padding: 0;
 }
 
-#guides ul {
+.class-ul {
   list-style: none;
   color: whitesmoke;
 }
@@ -562,4 +562,15 @@ a[aria-expanded='false'] .fa-chevron-up {
   border-top:#966ae9 2px solid;
   width:100%;
   padding-top:2rem;
+}
+
+.specs{
+  text-shadow: 2px 2px 5px black;
+  opacity:.9;
+  color:rgba(255,255,255,.9)
+}
+
+.spec-titles{
+  text-shadow: 2px 2px 10px #2e2e2e;
+  opacity:.95;
 }
