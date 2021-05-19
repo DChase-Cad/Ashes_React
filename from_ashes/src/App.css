@@ -565,12 +565,12 @@ a[aria-expanded='false'] .fa-chevron-up {
 }
 
 .specs{
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 1px 3px 1px black;
   opacity:.9;
   color:rgba(255,255,255,.9)
 }
 
 .spec-titles{
-  text-shadow: 2px 2px 10px #2e2e2e;
+  /* text-shadow: 2px 2px 10px #494646; */
   opacity:.95;
 }
