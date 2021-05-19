@@ -13,7 +13,7 @@ export default class ClassResourcesContent extends Component {
         return (
             <>
                 <div className="row row-content py-3 w-100 content">
-                    <h1 className="text-center mx-auto my-4 font-weight-bold w-100">Class Resources</h1>
+                    <h1 className="text-center mx-auto my-4 font-weight-bold w-100">Class Resources <small> - Wowhead Guides</small></h1>
                     
 
                         {CLASSES.map((index,i) => {
@@ -22,7 +22,9 @@ export default class ClassResourcesContent extends Component {
                                     <Card className="my-2 class-card">
                                         <h3 className={`${index.abbrv} class-card-header font-weight-bold spec-titles `}>{index.class.toUpperCase()}</h3>
                                         <ul className="mt-4 justify-content-center mx-auto">
-                                            {index.specs.map((s,i)=>{return(<li key={i} className="font-weight-bold specs class-ul my-1  p-0">{s}</li>)})}
+                                            {index.specs.map((s,idx)=>{
+                                            {console.log(idx)};
+                                                return(<li key={idx} className="font-weight-bold specs class-ul my-1  p-0"><a target="_blank" className="guide-link" href={index.link[idx]}>{s}</a></li>)})}
                                         </ul>
                                     </Card>
                                 </div>
