@@ -3,7 +3,7 @@ import HomeCarousel from './HomeCarousel'
 
 export default function Home(){
         return (
-                <div className="row row-content justify-content-center py-3 w-100 justify-self-center content ">
+                <div className="row row-content justify-content-center align-items-center py-3 w-100  content ">
                 <HomeCarousel />
                     <h2 className="text-center mb-4 mt-5 ptb font-weight-bold">Welcome to From Ashes Horde Guild on Kil'jaeden Server</h2>
                     <div className="col col-lg-6">

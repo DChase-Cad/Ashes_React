@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-// import logo from '../../public/assets/img/phoenix.png';;
+
 
 const TopNavbar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
+    //nav toggle
     const toggle = () => setIsOpen(!isOpen);
-    
-    function toggleLink (){
-        if (isOpen===true) {
-            console.log('what')
+
+    //toggle function for drop down nav
+    function toggleLink() {
+        if (isOpen === true) {
             toggle();
         }
     };
@@ -26,7 +27,7 @@ const TopNavbar = (props) => {
                     <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link to='/aboutus' className="nav-link" ><i className="d-none d-md-inline fa fa-info fa-lg"></i> About</Link></NavItem>
                     <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link to='/classresources' className="nav-link" href="/classResources.html"><i className="d-none d-md-inline fa fa-users fa-lg"></i> Class Resources</Link></NavItem>
                     <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link to='/gallery' className="nav-link"><i className="d-none d-md-inline fa fa-list fa-lg"></i> Gallery</Link></NavItem>
-                    <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><NavLink className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</NavLink></NavItem>
+                    <NavItem onClick={toggleLink} className="nav-item ml-4 drop"><Link className="nav-link" href="mailto:"><i className="d-none d-md-inline fa fa-address-card fa-lg"> </i> Contact</Link></NavItem>
                 </Nav>
             </Collapse>
         </Navbar>

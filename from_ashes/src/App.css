@@ -435,9 +435,13 @@ a[aria-expanded='false'] .fa-chevron-up {
   color: whitesmoke;
   text-shadow: 1px 1px 3px #171717;
 }
-.card img {
+.gal-img {
   border-radius: 25px;
-  width: 100%;
+  max-width: 100%;
+}
+
+.gal-img:hover{
+  cursor:pointer;
 }
 .card ul {
   margin-left: 3rem;
@@ -542,20 +546,25 @@ a[aria-expanded='false'] .fa-chevron-up {
 
 .class-card {
   background: #2e2e2e;
-  min-height: 195px;
+  border-radius:20px;
+  min-height: 16.5rem;
 }
 
 .class-card-header {
-  padding: 0;
+  padding: 1rem;
+
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .class-ul {
   list-style: none;
+  font-size:1.35rem;
   color: whitesmoke;
 }
 
 .home-width{
-  width:80% !important;
+  min-width:80%;
 }
 
 .ptb{
@@ -584,3 +593,4 @@ a[aria-expanded='false'] .fa-chevron-up {
   color:inherit;
   text-transform:uppercase;
 }
+

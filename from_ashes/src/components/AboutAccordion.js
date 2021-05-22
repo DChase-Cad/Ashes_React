@@ -22,14 +22,15 @@ export default class AboutAccordion extends Component {
   render() {
     const { cards, collapse } = this.state;
     return (
-      <div className="container">
+      <div className="container w-100">
         <h1 className="text-center mx-auto my-4 font-weight-bold">Guild Information</h1>
 
+        {/* mapping the cards with identical makeups from object in AccordionCards.js */}
         {cards.map(index => {
           return (
 
 
-            <Card key={index.index} className="w-75 mx-auto">
+            <Card key={index.index} className="w-100 mx-auto">
               <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={index.index}>{index.title} <small onClick={this.toggle} data-event={index.index} className="d-none d-sm-inline no-shadow font-weight-bold"> - {index.subtitle}</small></CardHeader>
               <Collapse isOpen={collapse === index.index}>
                 <div className="row align-items-center">
@@ -41,8 +42,8 @@ export default class AboutAccordion extends Component {
           )
         })}
 
-       {/* manually input card with ul and list */}
-        <Card key={4} className="w-75 mx-auto">
+       {/* manually input card last card with ul and list */}
+        <Card key={4} className="w-100 mx-auto">
           <CardHeader className="card-header align-items-center ac-link font-weight-bold" onClick={this.toggle} data-event={4}>Officers <small onClick={this.toggle} data-event={4} className="d-none d-sm-inline no-shadow font-weight-bold"> - Contact one of our officers in game with any questions.</small></CardHeader>
           <Collapse isOpen={collapse === 4}>
             <div className="row align-items-center">
