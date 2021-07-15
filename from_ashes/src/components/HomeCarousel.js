@@ -36,14 +36,14 @@ const HomeCarousel = (props) => {
           onExited={() => setAnimating(false)}
           key={item.src}
         >
-          <img className="img-fluid" src={item.src} alt={item.altText} />
+          <img className="img-fluid w-100" src={item.src} alt={item.altText} />
           <CarouselCaption className="blah" captionText={item.caption} captionHeader={item.header} />
         </CarouselItem>
       );
     });
   
     return (
-      <Carousel className="w-75 "
+      <Carousel className="w-75"
         activeIndex={activeIndex}
         next={next}
         previous={previous}
